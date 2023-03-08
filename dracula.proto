@@ -1,8 +1,8 @@
-syntax = "proto3"
+syntax = "proto3";
 
-package grpc.apple_health_monitor.dracula
+package grpc.apple_health_monitor.dracula;
 
-option go_package = "github.com/BravoLu/dracula"
+option go_package = "github.com/BravoLu/dracula";
 
 message ExportHealthDataRequest {
     int32 msg = 1;
