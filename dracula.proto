@@ -1,0 +1,17 @@
+syntax = "proto3"
+
+package grpc.apple_health_monitor.dracula
+
+option go_package = "github.com/BravoLu/dracula"
+
+message ExportHealthDataRequest {
+    int32 msg = 1;
+}
+
+message ExportHealthDataResponse {
+    string msg = 1;
+}
+
+service ExportHealthHttpService {
+    rpc ExportHealth (ExportHealthDataRequest) returns (ExportHealthDataResponse);
+}
